@@ -29,6 +29,9 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Membership));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel6 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
@@ -47,19 +50,19 @@
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.Membership_list = new Guna.UI.WinForms.GunaDataGridView();
+            this.Mduration = new System.Windows.Forms.TextBox();
+            this.Mdelete = new System.Windows.Forms.Button();
+            this.Medit = new System.Windows.Forms.Button();
+            this.Msave = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.Mcoast = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.Mname = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
@@ -71,7 +74,7 @@
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Membership_list)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -261,64 +264,127 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.dataGridView2);
-            this.panel1.Controls.Add(this.textBox1);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Controls.Add(this.button6);
+            this.panel1.Controls.Add(this.Membership_list);
+            this.panel1.Controls.Add(this.Mduration);
+            this.panel1.Controls.Add(this.Mdelete);
+            this.panel1.Controls.Add(this.Medit);
+            this.panel1.Controls.Add(this.Msave);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.Mcoast);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Controls.Add(this.label21);
-            this.panel1.Controls.Add(this.textBox8);
+            this.panel1.Controls.Add(this.Mname);
             this.panel1.Controls.Add(this.label22);
             this.panel1.Location = new System.Drawing.Point(236, -11);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1039, 658);
             this.panel1.TabIndex = 0;
             // 
-            // textBox1
+            // Membership_list
             // 
-            this.textBox1.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(397, 111);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(205, 34);
-            this.textBox1.TabIndex = 18;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.Membership_list.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.Membership_list.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Membership_list.BackgroundColor = System.Drawing.Color.White;
+            this.Membership_list.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Membership_list.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Membership_list.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Membership_list.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.Membership_list.ColumnHeadersHeight = 4;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Membership_list.DefaultCellStyle = dataGridViewCellStyle9;
+            this.Membership_list.EnableHeadersVisualStyles = false;
+            this.Membership_list.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Membership_list.Location = new System.Drawing.Point(3, 314);
+            this.Membership_list.Name = "Membership_list";
+            this.Membership_list.RowHeadersVisible = false;
+            this.Membership_list.RowHeadersWidth = 62;
+            this.Membership_list.RowTemplate.Height = 28;
+            this.Membership_list.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.Membership_list.Size = new System.Drawing.Size(1030, 315);
+            this.Membership_list.TabIndex = 19;
+            this.Membership_list.Theme = Guna.UI.WinForms.GunaDataGridViewPresetThemes.Guna;
+            this.Membership_list.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.Membership_list.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.Membership_list.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.Membership_list.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.Membership_list.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.Membership_list.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.Membership_list.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Membership_list.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.Membership_list.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.Membership_list.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.Membership_list.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.Membership_list.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.Membership_list.ThemeStyle.HeaderStyle.Height = 4;
+            this.Membership_list.ThemeStyle.ReadOnly = false;
+            this.Membership_list.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.Membership_list.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.Membership_list.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            this.Membership_list.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Membership_list.ThemeStyle.RowsStyle.Height = 28;
+            this.Membership_list.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.Membership_list.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.Membership_list.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Membership_list_CellContentClick);
             // 
-            // button4
+            // Mduration
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button4.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(670, 200);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 47);
-            this.button4.TabIndex = 17;
-            this.button4.Text = "Delete";
-            this.button4.UseVisualStyleBackColor = false;
+            this.Mduration.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mduration.Location = new System.Drawing.Point(397, 111);
+            this.Mduration.Name = "Mduration";
+            this.Mduration.Size = new System.Drawing.Size(205, 34);
+            this.Mduration.TabIndex = 18;
             // 
-            // button5
+            // Mdelete
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button5.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(417, 200);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(122, 47);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "Edit";
-            this.button5.UseVisualStyleBackColor = false;
+            this.Mdelete.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Mdelete.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mdelete.Location = new System.Drawing.Point(670, 200);
+            this.Mdelete.Name = "Mdelete";
+            this.Mdelete.Size = new System.Drawing.Size(122, 47);
+            this.Mdelete.TabIndex = 17;
+            this.Mdelete.Text = "Delete";
+            this.Mdelete.UseVisualStyleBackColor = false;
+            this.Mdelete.Click += new System.EventHandler(this.Mdelete_Click);
             // 
-            // button6
+            // Medit
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button6.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(146, 200);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(122, 47);
-            this.button6.TabIndex = 15;
-            this.button6.Text = "Save";
-            this.button6.UseVisualStyleBackColor = false;
+            this.Medit.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Medit.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Medit.Location = new System.Drawing.Point(417, 200);
+            this.Medit.Name = "Medit";
+            this.Medit.Size = new System.Drawing.Size(122, 47);
+            this.Medit.TabIndex = 16;
+            this.Medit.Text = "Edit";
+            this.Medit.UseVisualStyleBackColor = false;
+            this.Medit.Click += new System.EventHandler(this.Medit_Click);
+            // 
+            // Msave
+            // 
+            this.Msave.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Msave.Font = new System.Drawing.Font("Baskerville Old Face", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Msave.Location = new System.Drawing.Point(146, 200);
+            this.Msave.Name = "Msave";
+            this.Msave.Size = new System.Drawing.Size(122, 47);
+            this.Msave.TabIndex = 15;
+            this.Msave.Text = "Save";
+            this.Msave.UseVisualStyleBackColor = false;
+            this.Msave.Click += new System.EventHandler(this.Msave_Click);
             // 
             // label15
             // 
@@ -341,13 +407,13 @@
             this.label17.TabIndex = 11;
             this.label17.Text = "Cost";
             // 
-            // textBox5
+            // Mcoast
             // 
-            this.textBox5.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(740, 111);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(205, 34);
-            this.textBox5.TabIndex = 10;
+            this.Mcoast.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mcoast.Location = new System.Drawing.Point(740, 111);
+            this.Mcoast.Name = "Mcoast";
+            this.Mcoast.Size = new System.Drawing.Size(205, 34);
+            this.Mcoast.TabIndex = 10;
             // 
             // label18
             // 
@@ -378,13 +444,13 @@
             this.label21.TabIndex = 2;
             this.label21.Text = "Name";
             // 
-            // textBox8
+            // Mname
             // 
-            this.textBox8.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(44, 111);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(261, 34);
-            this.textBox8.TabIndex = 1;
+            this.Mname.Font = new System.Drawing.Font("Berlin Sans FB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Mname.Location = new System.Drawing.Point(44, 111);
+            this.Mname.Name = "Mname";
+            this.Mname.Size = new System.Drawing.Size(261, 34);
+            this.Mname.TabIndex = 1;
             // 
             // label22
             // 
@@ -396,17 +462,6 @@
             this.label22.Size = new System.Drawing.Size(346, 39);
             this.label22.TabIndex = 0;
             this.label22.Text = "Manage Memebership";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 314);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowHeadersWidth = 62;
-            this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(1036, 327);
-            this.dataGridView2.TabIndex = 19;
             // 
             // Membership
             // 
@@ -433,7 +488,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Membership_list)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -458,18 +513,18 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button Mdelete;
+        private System.Windows.Forms.Button Medit;
+        private System.Windows.Forms.Button Msave;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox Mcoast;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox Mname;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.TextBox Mduration;
+        private Guna.UI.WinForms.GunaDataGridView Membership_list;
     }
 }

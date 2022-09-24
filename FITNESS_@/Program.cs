@@ -16,7 +16,7 @@ namespace FITNESS__
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Coach());
+            Application.Run(new Membership());
         }
     }
 }

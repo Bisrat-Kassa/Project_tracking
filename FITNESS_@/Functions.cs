@@ -16,8 +16,6 @@ namespace FITNESS__
         private string Constr;
         private DataTable dt;
         private SqlDataAdapter sda;
-
-
         public Functions()
         {
             Constr = @"Data Source=LAPTOP-NCEDVHBS;Initial Catalog=defense_project;Integrated Security=True";
